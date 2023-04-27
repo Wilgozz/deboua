@@ -1,11 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button, Icon } from 'semantic-ui-react';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Button icon>
+        <Icon name='world' />
+        </Button>
+
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
