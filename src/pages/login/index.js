@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 import './index.css';
-import { Button, Grid, Input, Image, Container, GridRow, Form, FormField } from 'semantic-ui-react'
+import gatoLogin from '../../assets/images/gatoLogin.png';
 
 function Login() {
   const [email, setEmail] = useState();
@@ -10,46 +10,46 @@ function Login() {
 
 
   return (
-    <div>
-      <Container fluid>
-        <Grid>
-          <Grid.Row>
-
-            <Grid.Column computer={4} only='computer'>
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-            </Grid.Column>
+    <div className='container h-screen bg-rose-100'>
 
 
-            <Grid.Column tablet={16} computer={8}>
-              <div className='card'>
-                <h3>Login</h3>
-                <p className='subtituloLogin'>Bem-vindo novamente! Preencha os campos abaixo  para acessar sua conta</p>
-                <Form>
-
-                  <Form.Field required>
-                    <Input placeholder='Digite seu e-mail' />
-                  </Form.Field>
-
-                  <Form.Field required>
-                    <Input placeholder='Senha' />
-                  </Form.Field>
-
-                  <p className='naoConseguiuAcessarSuaConta'>Não conseguiu acessar sua conta?</p>
-                  <Button color='mediumblue' type='submit'>Entrar</Button>
-                </Form>
-
-                <p className='aindaNaoPossuiUmaConta'>Ainda não possui uma conta? Clique aqui</p>
-              </div>
-            </Grid.Column>
+      <div class="grid grid-cols-1 md:grid-cols-3">
 
 
-            <Grid.Column computer={4} only='computer'  >
-              <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
-            </Grid.Column>
 
-          </Grid.Row>
-        </Grid>
-      </Container >
+
+
+
+        <div class="hidden md:block relative">
+          <img src={gatoLogin} className='absolute right-0 bottom-0'></img>
+
+
+
+
+        </div>
+
+
+        <div className='card'>
+          <h3 className='mb-4'>Login</h3>
+          <p className='subtituloLogin'>Bem-vindo novamente! Preencha os campos abaixo  para acessar sua conta</p>
+
+          <form>
+            <input type="text" placeholder="Digite seu e-mail" className="input input-bordered w-full mb-7 mt-10" />
+            <input type="password" placeholder="Senha" className="input input-bordered w-full mb-4" />
+
+            <p className='naoConseguiuAcessarSuaConta'>Não conseguiu acessar sua conta?</p>
+
+            <button className="btn w-full mt-11 mb-6 bg-rose-300 border-none">Entrar</button>
+          </form>
+
+          <p className='aindaNaoPossuiUmaConta'>Ainda não possui uma conta? <b>Clique aqui</b></p>
+
+
+        </div>
+        <div class="hidden md:block">
+          
+        </div>
+      </div>
     </div>
   );
 }
