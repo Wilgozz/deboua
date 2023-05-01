@@ -2,9 +2,8 @@ import { useState, useContext } from 'react';
 import './index.css';
 import passarinho from '../../assets/images/passarinho.png';
 import Navbar from '../../components/navbar';
-import { Link } from 'react-router-dom';
 
-function Register() {
+function Emotions() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [loginWarning, setLoginWarning] = useState();
@@ -30,6 +29,8 @@ function Register() {
                     <p className='subtituloCadastro font-medium'>Bem-vindo! Preencha os campos abaixo  para criar sua conta</p>
 
                     <form>
+                        <input type="radio" name="radio-1" className="radio" checked />
+                        <input type="radio" name="radio-1" className="radio" />
                         <input type="text" placeholder="Nome" className="input input-bordered w-full mb-4 mt-10" />
                         <input type="text" placeholder="Digite seu e-mail" className="input input-bordered w-full mb-4" />
                         <input type="password" placeholder="Senha" className="input input-bordered w-full mb-4" />
@@ -40,7 +41,7 @@ function Register() {
                         <button className="btn w-full mt-11 mb-6 bg-rose-300 border-none">Cadastrar</button>
                     </form>
 
-                    <p className='aindaNaoPossuiUmaConta'>Já possui uma conta? <Link to={`/`}><b>Clique aqui</b></Link></p>
+                    <p className='aindaNaoPossuiUmaConta'>Já possui uma conta? <b>Clique aqui</b></p>
 
 
                 </div>
@@ -52,4 +53,4 @@ function Register() {
     );
 }
 
-export default Register;
+export default Emotions;

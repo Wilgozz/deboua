@@ -2,6 +2,7 @@ import { useState, useContext } from 'react';
 import './index.css';
 import gatoLogin from '../../assets/images/gatoLogin.png';
 import Navbar from '../../components/navbar';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState();
@@ -37,7 +38,7 @@ function Login() {
             <button className="btn w-full mt-11 mb-6 bg-rose-300 border-none">Entrar</button>
           </form>
 
-          <p className='aindaNaoPossuiUmaConta'>Ainda não possui uma conta? <b>Clique aqui</b></p>
+          <p className='aindaNaoPossuiUmaConta'>Ainda não possui uma conta? <Link to={`cadastro`}><b>Clique aqui</b></Link></p>
 
 
         </div>

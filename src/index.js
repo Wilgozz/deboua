@@ -5,12 +5,28 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import Login from './pages/login';
 import Register from './pages/register';
+import Emotions from './pages/emotions';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Login/>,
+  },
+  {
+    path: "/cadastro",
+    element: <Register/>,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-    <Register />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
