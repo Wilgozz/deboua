@@ -6,4 +6,45 @@ body{
     background: rgba(255, 255, 255, 0.87);
     border-radius: 25px;
     padding: 51px;
+    width: 100%;
+}
+
+.card h3{
+    color: #DBA49D;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.subtituloLogin {
+    color: #AEAEAE;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.naoConseguiuAcessarSuaConta{
+    color: #636363;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+ui.button.botaoLogin {
+    background: #DBA49D;
+    border-radius: 70px;
+}
+
+.aindaNaoPossuiUmaConta {
+    color: #636363;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
 }
