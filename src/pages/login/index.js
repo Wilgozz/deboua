@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import './index.css';
 import gatoLogin from '../../assets/images/gatoLogin.png';
+import Navbar from '../../components/navbar';
 
 function Login() {
   const [email, setEmail] = useState();
@@ -10,21 +11,15 @@ function Login() {
 
 
   return (
-    <div className='container h-screen bg-rose-100'>
+    <div className='h-screen bg-rose-100'>
 
+      <Navbar />
 
       <div class="grid grid-cols-1 md:grid-cols-3">
 
 
-
-
-
-
         <div class="hidden md:block relative">
           <img src={gatoLogin} className='absolute right-0 bottom-0'></img>
-
-
-
 
         </div>
 
@@ -47,7 +42,7 @@ function Login() {
 
         </div>
         <div class="hidden md:block">
-          
+
         </div>
       </div>
     </div>
