@@ -1,11 +1,11 @@
-.card {
+.cardLogin {
     background: rgba(255, 255, 255, 0.87);
     border-radius: 25px;
     padding: 51px;
     width: 100%;
 }
 
-.card h3 {
+.cardLogin h3 {
     color: #DBA49D;
     text-align: center;
     font-style: normal;

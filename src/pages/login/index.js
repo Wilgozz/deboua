@@ -24,7 +24,7 @@ function Login() {
         </div>
 
 
-        <div className='card'>
+        <div className='cardLogin'>
           <h3 className='mb-4'>Login</h3>
           <p className='subtituloLogin'>Bem-vindo novamente! Preencha os campos abaixo  para acessar sua conta</p>
 

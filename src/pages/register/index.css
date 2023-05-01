@@ -1,0 +1,23 @@
+.subtituloCadastro{
+    color: #AEAEAE;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.cardRegister {
+    background: rgba(255, 255, 255, 0.87);
+    border-radius: 25px;
+    padding: 51px;
+    width: 100%;
+    
+}
+
+.cardRegister h2 {
+    color: #DBA49D;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+}
