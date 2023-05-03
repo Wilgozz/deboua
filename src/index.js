@@ -14,18 +14,21 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login/>,
+    element: <Login />,
   },
   {
-    path: "/cadastro",
-    element: <Register/>,
+    path: "cadastro",
+    element: <Register />,
+  },
+  {
+    path: "emocoes",
+    element: <Emotions />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <RouterProvider router={router} />
   </React.StrictMode>
 );

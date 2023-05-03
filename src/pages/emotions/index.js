@@ -1,47 +1,56 @@
 import { useState, useContext } from 'react';
 import './index.css';
-import passarinho from '../../assets/images/passarinho.png';
-import Navbar from '../../components/navbar';
+import meninoEmocoes from '../../assets/images/meninoEmocoes.png';
+import feliz from '../../assets/images/feliz.png';
+import animado from '../../assets/images/animado.png';
+import ansioso from '../../assets/images/ansioso.png';
+import doente from '../../assets/images/doente.png';
+import irritado from '../../assets/images/irritado.png';
+import triste from '../../assets/images/triste.png';
 
 function Emotions() {
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
-    const [loginWarning, setLoginWarning] = useState();
+
     const [isLoading, setIsLoading] = useState(false);
 
 
     return (
         <div className='h-screen bg-rose-100'>
 
-            <Navbar />
-
             <div class="grid grid-cols-1 md:grid-cols-3">
 
 
                 <div class="hidden md:block relative">
-                    <img src={passarinho} className='absolute right-0 bottom-0'></img>
+                    <img src={meninoEmocoes} className='absolute right-0 bottom-0'></img>
 
                 </div>
 
 
-                <div className='cardRegister'>
-                    <h2 className='mb-4'>Crie uma conta! É gratuito :)</h2>
-                    <p className='subtituloCadastro font-medium'>Bem-vindo! Preencha os campos abaixo  para criar sua conta</p>
+                <div className='cardRegister mt-9'>
+                    <h2 className='mb-4'>Registro de emoções</h2>
+                    <p className='subtituloCadastro font-medium'>Nos conte sobre as suas emoções! Para isso, deslize a barra abaixo ;)</p>
 
-                    <form>
-                        <input type="radio" name="radio-1" className="radio" checked />
-                        <input type="radio" name="radio-1" className="radio" />
-                        <input type="text" placeholder="Nome" className="input input-bordered w-full mb-4 mt-10" />
-                        <input type="text" placeholder="Digite seu e-mail" className="input input-bordered w-full mb-4" />
-                        <input type="password" placeholder="Senha" className="input input-bordered w-full mb-4" />
-                        <input type="password" placeholder="Repita sua senha" className="input input-bordered w-full mb-4" />
 
-                        <p className='naoConseguiuAcessarSuaConta'>Não conseguiu acessar sua conta?</p>
+                    <div className="w-full flex justify-between text-xs mt-5">
+                        <span><img class="opacity-50 hover:opacity-100 cursor-pointer" src={feliz} /></span>
+                        <span><img class="opacity-50 hover:opacity-100 cursor-pointer" src={animado} /></span>
+                        <span><img class="opacity-50 hover:opacity-100 cursor-pointer" src={ansioso} /></span>
+                        <span><img class="opacity-50 hover:opacity-100 cursor-pointer" src={doente} /></span>
+                        <span><img class="opacity-50 hover:opacity-100 cursor-pointer" src={irritado} /></span>
+                        <span><img class="opacity-50 hover:opacity-100 cursor-pointer" src={triste} /></span>
+                    </div>
 
-                        <button className="btn w-full mt-11 mb-6 bg-rose-300 border-none">Cadastrar</button>
-                    </form>
 
-                    <p className='aindaNaoPossuiUmaConta'>Já possui uma conta? <b>Clique aqui</b></p>
+                
+
+
+
+
+
+                    <p className='substituloTextArea mt-8 mb-3'>Se você se sentir confortável, conte o motivo da escolha do emoji acima!</p>
+                    <textarea className="textarea textarea-bordered w-full resize-none" rows={4} placeholder="Escreva aqui o que quiser! :)" ></textarea>
+
+                    <button className="btn w-full mt-11 mb-6 bg-rose-300 border-none">Registrar</button>
+
 
 
                 </div>
