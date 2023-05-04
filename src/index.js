@@ -8,6 +8,8 @@ import Register from './pages/register';
 import Emotions from './pages/emotions';
 import ResetPassword from './pages/reset_password';
 import PasswordRecovery from './pages/password_recovery';
+import RecoveryEmailSent from './pages/recovery_email_sent';
+
 
 import {
   createBrowserRouter,
@@ -34,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "recuperarSenha",
     element: <PasswordRecovery />,
+  },
+  {
+    path: "recuperacaoDeEmailEnviado",
+    element: <RecoveryEmailSent />,
   },
 ]);
 
