@@ -6,6 +6,9 @@ import './index.css';
 import Login from './pages/login';
 import Register from './pages/register';
 import Emotions from './pages/emotions';
+import ResetPassword from './pages/reset_password';
+import PasswordRecovery from './pages/password_recovery';
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -23,6 +26,14 @@ const router = createBrowserRouter([
   {
     path: "emocoes",
     element: <Emotions />,
+  },
+  {
+    path: "recuperacaoDeSenha",
+    element: <ResetPassword />,
+  },
+  {
+    path: "recuperarSenha",
+    element: <PasswordRecovery />,
   },
 ]);
 
